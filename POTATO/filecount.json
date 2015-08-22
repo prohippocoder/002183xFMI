@@ -1,0 +1,20 @@
+//POTATO
+//COPYRIGHT 2014 2015
+//FILE COUNT LIST
+
+{
+
+	file_type(s): *.csv *.groovy *.js *.json *.bat *.inf
+		filecount_*.csv: filecount=2
+		filecount_*.groovy: filecount=1
+		filecount_*.js: filecount=2
+		filecount_*inf: filecount=0
+		filecount_*.json: filecount=1
+		filecount_*.bat: filecount=0
+		
+	file_type(s) without_files
+		list{
+			*.bat
+			*.inf
+}
+}
